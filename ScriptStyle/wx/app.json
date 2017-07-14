@@ -1,0 +1,14 @@
+{
+  "pages":[
+    
+    "pages/main/main",
+    "pages/index/index",
+    "pages/logs/logs"    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#eee",
+    "navigationBarTitleText": "剧本Style",
+    "navigationBarTextStyle":"black"
+  }
+}

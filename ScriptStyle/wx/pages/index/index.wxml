@@ -1,0 +1,49 @@
+<!--/* by D & mr.h copyright*/-->
+<audio  src="{{src}}" id="myAudio" loop></audio>
+<view class="container">
+  
+   <scroll-view class="messageSV" scroll-y="true"  style="0" scroll-top="{{scrollTop}}">
+    <view >
+    <block wx:for="{{mesArray}}" >
+      <template is="{{item.mesType}}" data="{{mes:item.mesitem.mes,userInfo:item.mesitem.userInfo}}"/>
+    </block></view>
+  </scroll-view>
+  <view class="bottom-line">
+    <button type="primary" bindtap="sendMes">NEXT</button>
+  </view>
+</view>
+
+<!--右-->
+<!--显示列表中的每一个元素-->
+<template name="youItem" >
+<view class="youMessage" >
+      <view class="youview">
+              <view class="i" >
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+
+         <text class ="nickName" >{{userInfo.nickName}}</text>
+         </view>
+        <view class="m">
+        
+          <text class="mes" >{{mes}}</text>
+          <view class="arrow"></view>
+        </view>
+      </view>
+       <view class="yk"></view>
+    </view>
+</template>
+
+<!--旁白-->
+<template name="pangbai">
+    <view class="pangBai">
+          <text>{{mes}}</text>
+        </view>
+</template>
+
+<!--标题-->
+<template name="biaoti">
+    <view class="biaoTi">
+          <text>{{mes}}</text>
+        </view>
+
+</template>

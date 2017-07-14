@@ -1,0 +1,56 @@
+
+<scroll-view>
+
+
+<!-- 点击view即可跳转-->
+<view class="card" bindtap="click2" >
+
+<view><text class="tag">爱情公寓第六集(上)</text></view>
+     <view class="btn-area">
+     <!--添加文件路径要严格符合微信小程序的规范，在第几层就得写几个“../”-->
+           <image src="../../image/lovehouse.jpg" style="width:640rpx"></image>
+        </view>
+
+</view>
+<view class="card"  bindtap="click3">
+
+<view><text class="tag">爱情公寓第六集(下)</text></view>
+     <view class="btn-area">
+            <image src="../../image/lovehouse.jpg" style="width:640rpx"></image>
+        </view>
+
+</view>
+
+
+<view class="card" bindtap="click1" >
+
+<view><text class="tag">哈姆雷特</text></view>
+
+     <view class="btn-area">
+           <image src="../../image/hamlet.jpg" style="width:640rpx"></image>
+        </view>
+
+</view>
+
+
+<view class="card"  bindtap="click4">
+
+<view>
+      <text class="tag">第十二夜剧本</text></view>
+      <view class="btn-area"   >
+            <image src="../../image/twlvenight.jpg" style="width:640rpx"></image>
+        </view>
+
+</view>
+
+
+<view class="card"  bindtap="click5">
+
+<view><text class="tag">人质</text></view>
+     <view class="btn-area">
+            <image src="../../image/captive.jpg" style="width:640rpx"></image>
+        </view>
+
+</view>
+
+</scroll-view>

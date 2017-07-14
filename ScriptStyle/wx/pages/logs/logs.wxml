@@ -1,0 +1,6 @@
+<!--logs.wxml-->
+<view class="container log-list">
+   <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" loop></audio>
+   <button bindtap="begin">开始</button>
+   <button bindtap="end">结束</button>
+</view>
